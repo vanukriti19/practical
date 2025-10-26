@@ -1,107 +1,59 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Hotel Room Booking Form</title>
-<style>
-body {
-  font-family: sans-serif;
-}
-.form-container {
-  width: 400px;
-  margin: 50px auto;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-h2 {
-  text-align: center;
-}
-.form-group {
-  margin-bottom: 15px;
-}
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-select,
-textarea {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.button-group {
-  text-align: center;
-}
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 0 5px;
-}
-</style>
-</head>
-<body>
-
-<div class="form-container">
-  <h2>Hotel Room Booking Form</h2>
-  <form action="#" method="post">
-    <div class="form-group">
-      <label for="fullName">Full Name:</label>
-      <input type="text" id="fullName" name="fullName">
-    </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email">
-    </div>
-    <div class="form-group">
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone">
-    </div>
-    <div class="form-group">
-      <label for="checkInDate">Check-in Date:</label>
-      <input type="date" id="checkInDate" name="checkInDate">
-    </div>
-    <div class="form-group">
-      <label for="checkOutDate">Check-out Date:</label>
-      <input type="date" id="checkOutDate" name="checkOutDate">
-    </div>
-    <div class="form-group">
-      <label for="roomType">Room Type:</label>
-      <select id="roomType" name="roomType">
-        <option value="single">Single Room</option>
-        <option value="double">Double Room</option>
-        <option value="suite">Suite</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="numGuests">Number of Guests:</label>
-      <input type="text" id="numGuests" name="numGuests">
-    </div>
-    <div class="form-group">
-      <label for="specialRequests">Special Requests:</label>
-      <textarea id="specialRequests" name="specialRequests" rows="4"></textarea>
-    </div>
-    <div class="button-group">
-      <button type="submit">Book Now</button>
-      <button type="reset">Reset Form</button>
-    </div>
-  </form>
-</div>
-
-<p><b>Outcome</b></p>
-<ul>
-  <li>Successfully created a hotel room booking form webpage using HTML.</li>
-  <li>Implemented input fields, labels, select, textarea, and buttons.</li>
-  <li>Learned practical form design techniques for web applications.</li>
-</ul>
-<hr>
-
-</body>
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Hotel Room Booking Form</title> 
+</head> 
+<body> 
+<h1 align="center">Hotel Room Booking Form</h1> 
+<form action="#" method="post" align="center"> 
+<!-- Name --> 
+<label for="fullname">Full Name:</label> 
+<input type="text" id="fullname" name="fullname" required> 
+<br><br> 
+<!-- Email --> 
+<label for="email">Email:</label> 
+<input type="email" id="email" name="email" required>
+   <br><br> 
+ 
+        <!-- Phone --> 
+        <label for="phone">Phone:</label> 
+        <input type="tel" id="phone" name="phone" required> 
+        <br><br> 
+ 
+        <!-- Check-in & Check-out --> 
+        <label for="checkin">Check-in Date:</label> 
+        <input type="date" id="checkin" name="checkin"> 
+        <br><br> 
+ 
+        <label for="checkout">Check-out Date:</label> 
+        <input type="date" id="checkout" name="checkout"> 
+        <br><br> 
+ 
+        <!-- Room Type --> 
+        <label for="room">Room Type:</label> 
+        <select id="room" name="room"> 
+            <option value="single">Single Room</option> 
+            <option value="double">Double Room</option> 
+            <option value="deluxe">Deluxe Room</option> 
+            <option value="suite">Suite</option> 
+        </select> 
+        <br><br> 
+ 
+        <!-- Number of Guests --> 
+        <label for="guests">Number of Guests:</label> 
+        <input type="number" id="guests" name="guests" min="1" max="10"> 
+        <br><br> 
+ 
+        <!-- Special Requests --> 
+        <label for="requests">Special Requests:</label><br> 
+        <textarea id="requests" name="requests" rows="4" cols="40"></textarea> 
+        <br><br> 
+ 
+        <!-- Buttons --> 
+        <input type="submit" value="Book Now"> 
+        <input type="reset" value="Reset Form"> 
+ 
+    </form> 
+ 
+</body> 
 </html>
