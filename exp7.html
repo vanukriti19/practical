@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pretty Navigation Menu - Experiment 7</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#fff5fa;
+  --card:#ffffff;
+  --pink:#ffb6d9;
+  --blue:#ccecff;
+  --green:#d9f9ea;
+  --text:#3c2e42;
+  --shadow:0 8px 25px rgba(0,0,0,0.08);
+  --radius:14px;
+}
+
+*{box-sizing:border-box;font-family:"Poppins",sans-serif;}
+body{
+  margin:0;
+  padding:30px;
+  background:linear-gradient(to bottom,var(--bg),#ffffff);
+  color:var(--text);
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+}
+
+header{
+  background:linear-gradient(90deg,var(--pink),#ffd6e9);
+  padding:15px;
+  border-radius:var(--radius);
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+header span{color:#7a004b;font-weight:600;}
+
+section{
+  background:var(--card);
+  margin-top:25px;
+  padding:20px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+
+.inline-menu ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+  text-align:center;
+}
+
+.inline-menu li{
+  display:inline-block;
+  margin:8px;
+}
+
+.inline-menu a{
+  display:inline-block;
+  text-decoration:none;
+  padding:10px 20px;
+  background:linear-gradient(to right,var(--blue),#e6f6ff);
+  color:#04536e;
+  border-radius:30px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.09);
+  transition:0.25s;
+}
+
+.inline-menu a:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+.float-menu ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.float-menu li{
+  float:left;
+  margin-right:12px;
+}
+
+.float-menu a{
+  text-decoration:none;
+  padding:9px 16px;
+  background:linear-gradient(to right,var(--green),#bdf3da);
+  color:#155a3d;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.09);
+  transition:0.25s;
+  display:block;
+}
+
+.float-menu a:hover{
+  transform:translateY(-3px);
+  box-shadow:0 7px 18px rgba(0,0,0,0.2);
+}
+
+
+.clear{
+  clear:both;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <header>
+    <h1> <span>My Website</span> Navigation </h1>
+  </header>
+
+
+  <section>
+    
+    <nav class="inline-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
+
+
+  <section>
+
+    <nav class="float-menu">
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+
+    
+    <div class="clear"></div>
+  </section>
+
+</div>
+
+</body>
+</html>

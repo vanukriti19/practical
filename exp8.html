@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Experiment 8 - Student Profile Cards (New Style)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  box-sizing:border-box;
+  font-family:'Quicksand',sans-serif;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(120deg,#c77dff,#ffafcc,#bde0fe);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:30px;
+}
+
+.wrapper{
+  width:100%;
+  max-width:1100px;
+}
+
+
+.title-box{
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(10px);
+  padding:20px;
+  text-align:center;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  color:#2d033b;
+}
+
+.title-box h1{
+  margin:0;
+  font-weight:700;
+}
+
+.title-box p{
+  margin-top:6px;
+  font-size:14px;
+  opacity:0.9;
+}
+
+
+.flex-container{
+  margin-top:50px;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  gap:35px;
+}
+
+
+.card{
+  width:260px;
+  padding:25px;
+  border-radius:22px;
+  background:rgba(255,255,255,0.28);
+  backdrop-filter:blur(12px);
+  box-shadow:0 12px 40px rgba(0,0,0,0.25);
+  text-align:center;
+  transition:0.35s ease;
+  border:1px solid rgba(255,255,255,0.3);
+}
+
+.card:hover{
+  transform:scale(1.06) rotate(-1deg);
+}
+
+
+.avatar{
+  width:85px;
+  height:85px;
+  margin:auto;
+  border-radius:50%;
+  background:linear-gradient(135deg,#ff4d8d,#ffb703,#00f5d4);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  font-weight:700;
+  font-size:24px;
+  box-shadow:0 0 20px rgba(255,255,255,0.7);
+}
+
+.name{
+  margin-top:14px;
+  font-size:18px;
+  font-weight:700;
+  color:#1d0033;
+}
+
+.detail{
+  margin-top:6px;
+  font-size:13.5px;
+  color:#28003f;
+  font-weight:500;
+}
+
+.tag{
+  display:inline-block;
+  margin-top:10px;
+  padding:5px 12px;
+  border-radius:30px;
+  background:linear-gradient(to right,#ffd6ff,#e7c6ff);
+  font-size:12px;
+  font-weight:600;
+  color:#3c0157;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="title-box">
+    <h1>✨ Student Profile Cards ✨</h1>
+    <p>Flexbox Layout | justify-content • align-items • flex-wrap</p>
+  </div>
+
+  
+  <div class="flex-container">
+
+    <div class="card">
+      <div class="avatar">AV</div>
+      <div class="name">Anukriti Verma</div>
+      <div class="detail">B.Tech - CSE</div>
+      <div class="detail">Roll No: 40</div>
+      <div class="detail">1st Year</div>
+      <div class="tag">Computer Science</div>
+    </div>
+
+    <div class="card">
+      <div class="avatar">AS</div>
+      <div class="name">Anshika Singh</div>
+      <div class="detail">B.Tech - IT</div>
+      <div class="detail">Roll No: 12</div>
+      <div class="detail">1st Year</div>
+      <div class="tag">Information Tech</div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
