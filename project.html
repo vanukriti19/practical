@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CARTIFY </title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #ffe8c2;
+      padding: 50px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff6600;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background-color: #e65c00;
+    }
+
+    .hero img {
+      width: 280px;
+      max-width: 100%;
+      margin-top: 20px;
+    }
+
+    main {
+      display: flex;
+      padding: 30px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .products-section {
+      flex: 3;
+      min-width: 250px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 6px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .product-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .product-price {
+      color: #ff6600;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .product-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .product-actions .btn {
+      padding: 7px 10px;
+      font-size: 12px;
+    }
+
+    .sidebar {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .box {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">CARTIFY</div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#">Deals</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Welcome to CARTIFY</h1>
+    <p>Your one-stop online store for electronics, fashion, and more.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Shopping Banner">
+</section>
+
+<main>
+<section class="products-section" id="products">
+<h2 class="section-title">Featured Products</h2>
+
+<div class="products-grid">
+
+<div class="product-card">
+  <img src="https://www.beatsbydre.com/content/dam/beats/web/product/headphones/solo4-wireless/pdp/product-carousel/cloud-pink/pink-01-solo4.jpg.large.2x.jpg" alt="Wireless Headphones">
+  <div class="product-name">Wireless Headphones</div>
+  <div class="product-price">₹1,999</div>
+  <p>High-quality sound with noise cancellation.</p>
+  <div class="product-actions">
+    <span>⭐ 4.5</span>
+    <a href="#" class="btn">Add to Cart</a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="https://gourban.in/cdn/shop/files/Pulse.jpg?v=1749553994&width=2048" alt="Smart Watch">
+  <div class="product-name">Smart Watch</div>
+  <div class="product-price">₹2,499</div>
+  <p>Track fitness and notifications.</p>
+  <div class="product-actions">
+    <span>⭐ 4.2</span>
+    <a href="#" class="btn">Add to Cart</a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Sneakers">
+  <div class="product-name">Casual Sneakers</div>
+  <div class="product-price">₹1,299</div>
+  <p>Comfortable and stylish.</p>
+  <div class="product-actions">
+    <span>⭐ 4.0</span>
+    <a href="#" class="btn">Add to Cart</a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62" alt="Backpack">
+  <div class="product-name">Backpack</div>
+  <div class="product-price">₹899</div>
+  <p>Durable backpack.</p>
+  <div class="product-actions">
+    <span>⭐ 4.3</span>
+    <a href="#" class="btn">Add to Cart</a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="https://media.wired.com/photos/683a782e13687d4580a2c63a/4:3/w_640%2Cc_limit/StormBox%25202%2520ryan%2520waniata.png" alt="Bluetooth Speaker">
+  <div class="product-name">Bluetooth Speaker</div>
+  <div class="product-price">₹1,499</div>
+  <p>Portable powerful sound.</p>
+  <div class="product-actions">
+    <span>⭐ 4.6</span>
+    <a href="#" class="btn">Add to Cart</a>
+  </div>
+</div>
+
+<div class="product-card">
+  <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083" alt="Sunglasses">
+  <div class="product-name">Sunglasses</div>
+  <div class="product-price">₹599</div>
+  <p>UV protected sunglasses.</p>
+  <div class="product-actions">
+    <span>⭐ 4.1</span>
+    <a href="#" class="btn">Add to Cart</a>
+  </div>
+</div>
+
+</div>
+</section>
+</main>
+
+<footer>
+© 2025 CARTIFY. All rights reserved.
+</footer>
+
+</body>
+</html>
